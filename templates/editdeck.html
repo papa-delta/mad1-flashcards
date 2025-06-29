@@ -32,14 +32,14 @@
 
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Deck Name</label>
-    <input type="name" name="dname" value="{{deck.deck_name}}" class="form-control" required>
+    <input type="name" name="dname" value="{{deck.deck_name}}" class="form-control" required maxlength="100">
     
     <div id="emailHelp" class="form-text">Enter new name, or leave untouched to retain original name</div>
   </div>
 
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Deck Description</label>
-    <input type="description" name="ddesc" value="{{deck.deck_description}}" class="form-control" required>
+    <input type="description" name="ddesc" value="{{deck.deck_description}}" class="form-control" required maxlength="100">
     <div id="emailHelp" class="form-text">Enter new description, or leave untouched to retain original description</div>
   </div>
   
