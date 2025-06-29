@@ -7,10 +7,9 @@ from time import *
 def convint(l):
   q=l.split(',')
   a=[]
-  print('l',l)
-  print('q',q)
+  #print('l',l)
+  #print('q',q)
   for i in q:
-    print(i)
     a.append(int(i))
   return a
 
@@ -51,8 +50,6 @@ def scores(id):
 #function to update date of last review of a deck
 def lrt(id):
 	x=str(date.today())
-	print(x)
-	print(type(x))
 	c=decks.query.filter_by(did=id).update(dict(last_reviewed=x))
 	db.session.commit()
 	return
